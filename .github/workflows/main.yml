@@ -25,7 +25,5 @@ jobs:
       - name: Build project
         run: cmake --build ${{ github.workspace }}/build --config ${{ env.BUILD_TYPE }}
 
-      - name: Run main program
-        run: ${{ github.workspace }}/build/test_list
       - name: Run tests executable
         run: ${{ github.workspace }}/build/test_list
